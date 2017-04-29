@@ -25,7 +25,6 @@
   </div>
 </template>
 <script>
-import data from '../util/mock';
 export default {
   name: 'signin',
   data () {

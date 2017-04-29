@@ -6,7 +6,9 @@
                 <div class="user-info">
                  <Icon type="person" class="person"></Icon>
                  {{userName}}
-                 <Icon type="android-exit" class="exit"></Icon>   
+                  <a @click="signOut">
+                    <Icon type="android-exit" class="exit"></Icon>
+                  </a>
                 </div>
             </div>
         <div class="content">
@@ -14,7 +16,7 @@
         </router-view>
         </div>
     </div>
-   </div> 
+   </div>
 </template>
 
 <script>
@@ -27,7 +29,13 @@ export default {
     }
   },
   mounted(){
-     
+
+  },
+  methods:{
+      signOut(){
+        sessionStorage.removeItem("user");
+        this.$router.push('/');
+      }
   }
 }
 </script>

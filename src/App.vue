@@ -8,11 +8,12 @@
 <script>
 import mains from './components/Mains.vue'
 import signin from './components/Signin.vue'
+import data from './util/mock'
 export default {
   name: 'app',
   data(){
     return{
-         signIn:false,     
+         signIn:false,
          signOut:true
     }
   },
