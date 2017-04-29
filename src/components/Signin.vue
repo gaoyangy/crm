@@ -61,7 +61,7 @@ methods:{
                                 console.log(data)
                                 sessionStorage.setItem("user",data.body.Message);
                                 self.$Message.success('登录成功!');
-                                self.$router.push('/index');
+                                self.$router.go(0);
                                 }).catch((e)=>{
                                     self.$Message.error(e.message);
                                 })
