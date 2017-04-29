@@ -10,7 +10,7 @@ import axios from 'axios'
 import 'iview/dist/styles/iview.css' // 使用 CSS
 
 Vue.config.productionTip = false
-Vue.prototype.$http = axios
+Vue.prototype.axios = axios
 Vue.use(iView);
 Vue.use(vueResource);
 /* eslint-disable no-new */
